@@ -1,0 +1,132 @@
+.catgry-page ul{
+    padding-left: 0px;
+}
+.catgry-page ul li{
+    padding-top: 22px;
+}
+.catgry-page ul li a {
+    font-size: 18px;
+}
+
+.article-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.article-cards .article-cont{
+    width: 48%;
+    height: 350px;
+    margin: 10px;
+}
+.article-cards .article-cont:hover{
+    box-shadow: 0 0 10px #000;
+    opacity: 0.9;
+    transition: .3s ease;
+}
+.article-cont .art-img{
+    width: 100%;
+    height: 70%;
+}
+.art-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.article-cont .art-txt{
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+}
+.art-txt h2{
+    font-size: 20px;
+}
+.art-txt .art-sinc{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.art-sinc .time{
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+.time i{
+    margin: 4px;
+}
+.art-sinc .authr{
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+.authr i{
+    margin: 4px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .article-cards .article-cont {
+        width: 47%;
+        height: 385px;
+    }
+    .art-sinc .time {
+        width: 40%;
+    }
+    .art-sinc .authr {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .article-cards .article-cont {
+        height: 430px;
+    }
+    .art-sinc .time {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .head-box ul li {
+        padding-top: 25px;
+        margin: 18px 0px 0px 0px;
+    }
+    .catgry-page ul li a {
+        font-size: 14px;
+    }
+    .body-box {
+        padding: 10px;
+    }
+    .duo-body-box {
+        margin-top: 20px;
+    }
+    .article-cards .article-cont {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    
+    .catgry-page ul li a {
+        font-size: 12px;
+    }
+    .article-cont .art-txt {
+        padding: 15px;
+    }
+    .art-sinc .time {
+        width: 51%;
+    }
+    .art-sinc .authr {
+        width: 47%;
+    } 
+
+}
+
+@media screen and (max-width: 320px){
+    .article-cont .art-img {
+        height: 60%;
+    }
+    .article-cont .art-txt {
+        height: 40%;
+    }
+}

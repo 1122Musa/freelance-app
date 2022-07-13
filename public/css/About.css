@@ -1,0 +1,304 @@
+.counter-box{
+    width: 100%;
+    height: 100px;
+    margin: 20px 0px;
+}
+.counter-box .in-counter-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.in-counter-box .counter-card {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.counter-card .out-num {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    padding: 0px 10px;
+    justify-content: center;
+}
+.out-num .num{
+    font-size: 45px;
+    color: #2ecc71;
+    font-weight: 700; 
+}
+.out-num label{
+    font-size: 45px;
+    color: #2ecc71;
+    font-weight: 600;
+}
+.count-txt{
+    width: 100%;
+    font-size: 20px;
+}
+.out-num :nth-child(2) .num{
+    color: #3498db;
+}
+.out-num :nth-child(2) label{
+    color: #3498db;
+}
+.out-num :nth-child(3) .num{
+    color: #9b59b6;
+}
+.out-num :nth-child(3) label{
+    color: #9b59b6;
+}
+
+.banner-sign{
+    width: 100%;
+    height: 450px;
+    margin: 70px 0px 20px 0px; 
+    position: relative;
+    overflow: hidden;
+}
+.banner-sign .banner-pic{
+    width: 100%;
+    height: 100%;
+}
+.banner-pic img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+.banner-sign-txt{
+    width: 45%;
+    height: 380px;
+    float: right;
+    position: absolute;
+    bottom: 70px;
+    right: 100px;
+    padding: 20px;
+}
+.banner-sign-txt h1{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.banner-sign-txt p {
+    color: #fff;
+    font-size: 18px;
+    margin: 30px 0px;
+}
+.go-btn{
+    width: 100%;
+    display: flex;
+}
+.go-btn button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin: 0px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.go-btn button:hover{
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.496);
+    transition: .2s;
+}
+.go-btn :nth-child(1){
+    background-color: #252121;
+}
+.go-btn :nth-child(2){
+    background-color: #ff5851;
+}
+
+
+.brands{
+    width: 100%;
+    height: 130px;
+}
+.brands .brands-pic{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+}
+.brands-pic .brand-img{
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    border-right: 1px solid silver;
+}
+.brand-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: fill;
+}
+.brands-pic :nth-child(5){
+    border: none;
+}
+
+
+.team-box{
+    width: 100%;
+    height: 500px;
+    margin: 90px 0px 20px 0px;
+}
+.team-box .in-team-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.in-team-box .team-txt{
+    width: 40%;
+    height: 50%;
+    display: block;
+    padding: 40px;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+}
+.team-txt h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.team-txt p{
+    font-size: 20px;
+    color: #999;
+}
+.team-txt .text-line {
+    width: 200px;
+    height: 4px;
+    border: 2px solid #ff5851;
+    background-color: #ff5851;
+    border-radius: 20px;
+    margin: 20px 0px 0px 0px;
+}
+.in-team-box .snake{
+    width: 20%;
+    height: 50%;
+}
+.snake{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.snake img{
+    width: 100%;
+    height: 100%;
+    background-size: fill;
+    object-fit: fill;
+}
+.snake .overlay{
+   position:absolute;
+   opacity: 1;
+   text-align:center;
+   background-color:#fff;
+   padding: 10px;
+   padding-top: 50px;
+   
+}
+.overlay h3{
+   font-size:20px;
+   font-weight:bold;
+   display:block;
+   width:100%;
+}
+.social{
+    width: 100%;
+    margin-top: 50px;
+}
+.social i{
+    margin: 5px;
+}
+.social  :nth-child(1){
+    color: blue;
+}
+.social  :nth-child(2){
+    color: #008CBA;
+}
+.social  :nth-child(3){
+    color: red;
+}
+.social  :nth-child(4){
+    color: rgb(245, 10, 49);
+}
+.social  :nth-child(5){
+    color: green;
+}
+
+
+@media screen and (max-width: 425px){
+    .body-box {
+        padding: 10px;
+    }
+    .duo-body-box .left-body {
+        padding: 0px;
+    }
+    .counter-box {
+        height: 111px;
+    }
+    .counter-box .in-counter-box {
+        padding: 0px;
+    }
+    .in-counter-box .counter-card {
+        overflow: hidden;
+    }
+    .banner-sign-txt {
+        width: 100%;
+        bottom: -25px;
+        right: 0px;
+    }
+    .brands-pic .brand-img {
+        width: 33%;
+    }
+    .in-team-box .team-txt {
+        width: 100%;
+        height: 45%;
+    }
+    .in-team-box .snake {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .counter-box {
+        height: 200px;
+    }
+    .in-counter-box .counter-card {
+        width: 44%;
+        height: 111px;
+        display: block;
+        margin: 0px 10px;
+    }
+    .banner-sign-txt {
+        bottom: 30px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .counter-box {
+        height: 303px;
+    }
+    .in-counter-box .counter-card {
+        width: 60%;
+        height: 111px;
+    }
+    .brands-pic .brand-img {
+        width: 50%;
+        padding: 0px;
+    }
+    .in-team-box .team-txt {
+        padding: 10px;
+    }
+}

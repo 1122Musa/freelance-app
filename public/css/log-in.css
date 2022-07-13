@@ -1,0 +1,87 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: #ff5851;
+}
+.join {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.join button {
+    width: 250px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: transparent;
+}
+.join button a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.join button:hover{
+    transition: all .3s;
+    background: #fff;
+    border: 2px solid #fff;
+}
+.join button:hover a{
+    color: #ff5851;
+}
+
+.logIn-box {
+    width: 100%;
+    height: 100vh;
+    
+}
+.logIn-box .in-logIn-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.in-logIn-box img {
+    width: 400px;
+}
+.in-logIn-box .usr-logIn {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    top: 20%;
+    
+}
+.usr-logIn form {
+    position: absolute;
+    width: 600px;
+    /* height: 500px; */
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.usr-logIn form label{
+    width: 100%;
+    height: 80px;
+    display: block;
+    text-align: left;
+}
+.usr-logIn form label input {
+    width: 100%;
+    height: 35px;
+    padding: 0px 20px;
+    margin: 10px 0px;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+input[type="submit"] {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+}

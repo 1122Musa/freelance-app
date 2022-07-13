@@ -1,0 +1,310 @@
+
+.how-banner{
+    width: 100%;
+    height: 300px;
+    background-image: url(banner-img.jpg);
+    position: relative;
+}
+.in-banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.text{
+    width: 35%;
+    text-align: center;
+}
+.text h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.text .breadcrumbs{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.breadcrumbs h5{
+    color: #999;
+    font-size: 20px;
+}
+.breadcrumbs span{
+    font-size: 30px;
+    color: #999;
+    margin: -15px 10px;
+    font-weight: 500;
+}
+.breadcrumbs :nth-child(1){
+    color: #fff;
+}
+
+
+.container-box{
+    width: 100%;
+    height: 100%;
+    background-color: #cfc5c539;
+    padding: 100px;
+}
+.container-box .in-container{
+    width: 100%;
+    height: 100%;
+}
+.head-box{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid silver;
+    display: flex;
+    justify-content: center;
+}
+.head-box .catgry-page {
+    width: 51%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.head-box ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head-box ul li {
+    width: 100%;
+    height: 100%;
+    padding-top: 19px;
+    margin:18px 10px 0px 10px;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.head-box ul li a{
+    color: #7a7676c4;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 20px;
+}
+.red-line{
+    width: 100%;
+    height: 3px;
+    border: 3px solid #ff5851;
+    background-color: #ff5851;
+    border-radius: 20px;
+    position: absolute;
+    margin: 17px 0px 0px 100%;
+} 
+.head-box ul li a:hover{
+    color: #ff5851;
+}
+.body-box{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+.duo-body-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.duo-body-box .left-body{
+    width: 60%;
+    height: 100%;
+    float: left;
+    padding: 20px;
+}
+.duo-body-box .right-body{
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+.left-body .text{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+.text h2{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.text h5{
+    font-size: 18px;
+    color: #999;
+    font-weight: 100;
+}
+.text .text-line{
+    width: 200px;
+    height: 4px;
+    border: 2px solid #ff5851;
+    background-color: #ff5851;
+    border-radius: 20px;
+    margin: 20px 0px 0px 0px;
+}
+.text .down-text{
+    width: 100%;
+    height: 100%;
+    margin: 30px 0px;
+}
+.down-text .accordion{
+    width: 100%;
+    height: 100%;
+    margin: 30px 0px;
+}
+.accordion-body h3{
+    font-size: 30px;
+    color: #000;
+}
+.accordion-body .fedback{
+    width: 100%;
+}
+.fedback p :nth-child(1){
+    color: green;
+    font-size: 20px;
+}
+.fedback p :nth-child(2){
+    color: red;
+    font-size: 20px;
+}
+.right-body .cont-img{
+    width: 100%;
+    height: 100%;
+}
+.cont-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+.sep-line{
+    width: 100%;
+    height: 1px;
+    border: .5px solid silver;
+    margin-top: 50px;
+}
+.sec-duo-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.left-sec-box{
+    width: 40%;
+    height: 100%;
+    float: left;
+    padding: 20px;
+}
+.right-sec-box{
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+.right-sec-box .text{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+.thre-body-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.thre-left-body{
+    width: 60%;
+    height: 100%;
+    float: left;
+    padding: 20px;
+}
+.thre-right-body{
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+.thre-left-body .text{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .text {
+        width: 100%;
+    }
+    .head-box .catgry-page {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .container-box {
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 425px){
+    .head-box ul li {
+        padding-top: 23px;
+        margin: 18px 5px 0px 5px;
+    }
+    .head-box ul {
+        padding-left: 0px;
+    }
+    .head-box ul li a {
+        font-size: 17px;
+    }
+    .duo-body-box .left-body {
+        width: 100%;
+    }
+    .duo-body-box .right-body {
+        width: 100%;
+    }
+    .left-sec-box {
+        width: 100%;
+    }
+    .right-sec-box {
+        width: 100%;
+    }
+    .thre-left-body {
+        width: 100%;
+    }
+    .thre-right-body {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .head-box ul li {
+        padding-top: 25px;
+    }
+    .head-box ul li a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .head-box ul li a {
+        font-size: 12px;
+    }
+    .body-box {
+        padding: 20px;
+    }
+    .duo-body-box .left-body {
+        padding: 0px;
+    }
+    .thre-left-body {
+        padding: 10px;
+    }
+}

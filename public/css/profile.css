@@ -1,0 +1,326 @@
+        .profile-box{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .profile-box .in-profile-box{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: 40px 80px;
+            background-color: #063f5014;
+        }
+        .in-profile-box .user-side{
+            width: 35%;
+            height: 100%;
+            float: left;
+        }
+        .in-profile-box .user-detail{
+            width: 65%;
+            height: 100%;
+            float: right;
+        }
+        .user-side .user-profile{
+            width: 100%;
+            height: 50%;
+            border: 1px solid silver;
+            background-color: #fff;
+            margin: 0px 10px 10px 0px;
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .user-profile img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .user-profile .name{
+            width: 100%;
+            height: 30px;
+            font-weight: 600;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0px;
+        }
+        .user-profile .work{
+            width: 100%;
+            text-align: center;
+            font-size: 17px;
+            color: #999;
+        }
+        .user-profile .city{
+            width: 100%;
+            text-align: center;
+            font-size: 17px;
+            color: #999;
+        }
+        .user-profile button{
+            border: 1px solid rgba(0, 0, 255, 0.56);
+            border-radius: 8px;
+            background-color: rgba(0, 0, 255, 0.56);
+        }
+        .user-profile button a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .user-side .user-social{
+            width: 100%;
+            height: 50%;
+            border: 1px solid silver;
+            background-color: #fff;
+            margin: 10px 10px 0px 0px;
+            border-radius: 10px;
+        }
+        .user-social ul{
+            width: 100%;
+            height: 100%;
+            padding-left: 0px;
+        }
+        .user-social ul li{
+            width: 100%;
+            height: 20%;
+            border-bottom: 1px solid silver;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding: 0px 20px;
+        }
+        .user-social ul :nth-child(5){
+            border: none;
+        }
+        .user-social ul li a{
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            font-weight: 600;
+            width: 50%;
+            text-align: left;
+        }
+        .user-social ul li p{
+            color: #999;
+            font-size: 16px;
+            font-weight: 600;
+            width: 50%;
+            text-align: right;
+            margin-bottom: 0px;
+        } 
+        .user-detail .user-info{
+            width: 100%;
+            height: 50%;
+            border: 1px solid silver;
+            background-color: #fff;
+            margin: 0px 0px 0px 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .user-detail .user-progres{
+            width: 100%;
+            height: 50%;
+            margin: 10px 0px 0px 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .user-info ul{
+            width: 100%;
+            height: 88%;
+            padding-left: 0px;
+            margin-bottom: 0px;
+        }
+        .user-info ul li {
+            width: 100%;
+            height: 19%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-bottom: 1px solid silver;
+        }
+        .user-info ul li h3{
+            width: 35%;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .user-info ul li p{
+            margin-bottom: 0px;
+            color: #999;
+        }
+        .user-info button {
+            background: blue;
+            width: 85px;
+            height: 35px;
+            border: none;
+            border-radius: 7px;
+            font-weight: 500;
+        }
+        .user-progres .project-status{
+            width: 49%;
+            height: 100%;
+            background-color: #fff;
+            border: 1px solid silver;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .project-status h3{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .project-status .projects {
+            width: 100%;
+            height: 85%;
+        }
+        .projects ul {
+            width: 100%;
+            height: 100%;
+            padding-left: 0px;
+            margin-bottom: 0px;
+        }
+        .projects ul li {
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+            height: 20%;
+            list-style: none;
+        }
+        .projects ul li h4{
+            font-size: 18px;
+        }
+        .projects ul li .bar {
+            width: 100%;
+            height: 5px;
+            position: relative;
+            background-color: #99999929;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .projects ul li .in-progress {
+            position: absolute;
+            background-color: rgba(0, 145, 255, 0.856);
+            width: 75%;
+            height: 100%;
+        }
+
+
+        @media screen and (min-width: 300px) {
+            .profile-box {
+                height: 100%;
+            }
+            .profile-box .in-profile-box {
+                padding: 40px 10px;
+                flex-direction: column;
+            }
+            .in-profile-box .user-side {
+                width: 100%;
+            }
+            .user-side .user-profile {
+                width: 100%;
+                height: 100%;
+            }
+            .user-side .user-social {
+                display: none;
+            }
+            .in-profile-box .user-detail {
+                width: 100%;
+                margin-left: -10px;
+            }
+            .user-info ul li {
+                justify-content: space-between;
+            }
+            .user-detail .user-info {
+                width: 100%;
+            }
+            .user-progres .project-status {
+                width: 100%;
+            }
+            .user-info button {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 630px){
+            .profile-box .in-profile-box {
+                padding: 40px 10px;
+                flex-direction: row;
+            }
+            .in-profile-box .user-side {
+                width: 50%;
+            }
+            .user-info ul li {
+                justify-content: space-between;
+            }
+            .in-profile-box .user-detail {
+                width: 60%;
+            }
+            .user-info ul li {
+                justify-content: space-between;
+                height: 49.25px;
+            }
+            .user-side .user-social {
+                display: flex;
+            }
+            .in-profile-box .user-detail {
+                margin-left: 0px;
+            }
+            .user-progres .project-status {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 900px){
+            .profile-box .in-profile-box {
+                padding: 40px 30px;
+            }
+            .in-profile-box .user-side {
+                width: 40%;
+            }
+            .user-side .user-profile {
+                width: 100%;
+                height: 50%;
+            }
+            .user-side .user-social {
+                display: flex;
+            }
+            .user-info ul li {
+                justify-content: space-between;
+                height: 38px;
+            }
+            .user-info button {
+                display: block;
+                margin: 10px;
+            }
+            .user-progres .project-status {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .profile-box .in-profile-box {
+                padding: 40px 80px;
+            }
+            .in-profile-box .user-side {
+                width: 40%;
+            }
+            .user-side .user-profile {
+                width: 100%;
+                height: 50%;
+            }
+            .user-side .user-social {
+                display: flex;
+            }
+            .user-info ul li {
+                justify-content: flex-start;
+                height: 38px;
+            }
+            .user-info button {
+                display: block;
+                margin: 10px;
+            }
+            .user-progres .project-status {
+                width: 100%;
+            }
+        }
+
+

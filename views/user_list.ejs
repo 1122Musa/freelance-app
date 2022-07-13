@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="how_it_works.css">
+        <link rel="stylesheet" href="articles.css">
+        <link rel="stylesheet" href="privacy.css">
+        <link rel="stylesheet" href="user_list.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+            integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        <title>Worktern - Marketplace</title>
+        <style>
+            .links ul :nth-child(4) a{
+    color: #ff5851;
+}
+
+.links ul :nth-child(4) ::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #ff5851;
+    border: 1px solid #ff5851;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    border-radius: 100px;
+}
+        </style>
+
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="/home">
+                      <img src="logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li id="main"><a href="#">Home</a>
+                            <!-- <div class="under-line">
+                              <div class="in-under-line"></div>
+                            </div> -->
+
+                            <div class="link-down" id="link-down">
+                                <ul>
+                                    <!-- <li><a href="index.html">Home</a></li> -->
+                                    <li><a href="articles.html">Blogs</a></li>
+                                    <!-- <li><a href="">Company</a></li> -->
+                                    <li><a href="About.html">About</a></li>
+                                    <li><a href="privacy.html">Privacy Policy</a></li>
+                                    <!-- <li><a href="profile.html">Profile</a></li> -->
+                                    <!-- <li><a href="">404 Page</a></li> -->
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <!-- <span>&#8226;</span> -->
+                        <li><a href="/about">How It Works</a>
+                            <!-- <div class="under-line">
+                                <div class="in-under-line"></div>
+                            </div> -->
+                        </li>
+                        <!-- <span>&#8226;</span> -->
+                        <li id="browse"><a href="/projects">Projects</a>
+                            <!-- <div class="under-line">
+                                <div class="in-under-line"></div>
+                            </div> -->
+                        </li>
+
+                        <!-- <div class="link-down-2" id="link-down-2">
+                            <ul>
+                                <li><a href="">Job Listing</a></li>
+                                <li><a href="">Job Single</a></li>
+                                <li><a href="">Job Porposal</a></li>
+                            </ul>
+                        </div> -->
+                        <!-- <span>&#8226;</span> -->
+                        <li id="view"><a href="/freelancer">Freelancers</a>
+                            <!-- <div class="under-line">
+                                <div class="in-under-line"></div>
+                            </div> -->
+                        </li>
+
+                        <!-- <div class="link-down-3" id="link-down-3">
+                            <ul>
+                                <li><a href="">User Listing</a></li>
+                                <li><a href="">User Single</a></li>
+                            </ul>
+                        </div> -->
+                    </ul>
+                </div>
+
+                <div class="sepr-line">
+                    <div class="in-sepr-line"></div>
+                </div>
+
+                <div class="btns">
+                    <a href="/login">LOGIN</a>
+                    <a href="/join">JOIN NOW</a>
+                </div>
+
+                
+            </nav>
+        </header>
+
+        <!-- FOR-RESPONSIVE SIDEBAR MENU  -->
+        
+        <div class="drop-bar" id="drop-bar">
+            <div class="bar-cont">
+                <div class="close-bar" id="hide-btn">
+                    <i class="fa fa-xmark"></i>
+                </div>
+                <div class="links-drop">
+                    <ul>
+                        <li class="media"><a href="#">Main</a>
+                            <div class="down-arrow"><i class="fa-solid fa-angle-down"></i></div>
+                            <div class="under-line">
+                                <div class="in-under-line"></div>
+                            </div>
+
+                            <div class="Home-drop" id="home-drop">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="articles.html">Article</a></li>
+                                    <li><a href="">Company</a></li>
+                                    <li><a href="About.html">About</a></li>
+                                    <li><a href="privacy.html">Privacy Policy</a></li>
+                                    <li><a href="">Coming Soon</a></li>
+                                    <li><a href="">404 Page</a></li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        
+                        
+                        
+                        <li><a href="how_it_works.html">How It Works</a>
+                            <!-- <div class="under-line">
+                                <div class="in-under-line"></div>
+                            </div> -->
+                        </li>
+                        
+                        <li><a href="Browse-jobs.html">Browse Jobs</a>
+                            <!-- <div class="under-line">
+                                <div class="in-under-line"></div>
+                            </div> -->
+                        </li>
+
+                        
+                        <li><a href="user_list.html">View Freelancers</a>
+                            <!-- <div class="under-line">
+                                <div class="in-under-line"></div>
+                            </div> -->
+                        </li>
+
+                        <div class="drop-btns">
+                            <a href="log-in.html">LOGIN</a>
+                            <a href="join.html">JOIN NOW</a>
+                        </div>
+
+                    </ul>
+                    </div>
+        
+    
+            </div>
+            <div class="drop-arrow">
+                <div class="down-sign" id="down-sign">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="how-banner">
+            <div class="in-banner">
+                <div class="text">
+                    <h1>Freelancers</h1>
+                    <div class="breadcrumbs">
+                        <h5>Home </h5>
+                        <span>/</span>
+                        <h5>Freelancers</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-box">
+            <div class="in-container">
+                <div class="left-effect">
+
+                    <div class="catgry-lst">
+                        <h4>Categories</h4>
+                        <ul class="list-scroll">
+                            <li><input type="checkbox" >   Wordpress</li>
+                            <li><input type="checkbox" >   Graphic Design</li>
+                            <li><input type="checkbox" >   Website Design</li>
+                            <li><input type="checkbox" >   Article Design</li>
+                            <li><input type="checkbox" >   Software Architecture</li>
+                            <li><input type="checkbox" >   App Design</li>
+                            <li><input type="checkbox" >   Video Making</li>
+                        </ul>
+                    </div>
+
+                    <div class="location-lst">
+                        <h4>Location</h4>
+                        <ul class="list-scroll">
+                            <li><input type="checkbox" ><svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-au" viewBox="0 0 640 480">
+                                <path id="path617" fill="#00008B" d="M0 0h640v480H0z"/>
+                                <path id="path971" fill="#fff" d="m37.5 0 122 90.5L281 0h39v31l-120 89.5 120 89V240h-40l-120-89.5L40.5 240H0v-30l119.5-89L0 32V0z"/>
+                                <path id="path973" fill="#f00" d="M212 140.5 320 220v20l-135.5-99.5zm-92 10 3 17.5-96 72H0zM320 0v1.5l-124.5 94 1-22L295 0zM0 0l119.5 88h-30L0 21z"/>
+                                <path id="path975" fill="#fff" d="M120.5,0L120.5,240L200.5,240L200.5,0L120.5,0ZM0,80L0,160L320,160L320,80L0,80Z"/>
+                                <path id="path977" fill="#f00" d="M0 96.5v48h320v-48zM136.5 0v240h48V0z"/>
+                                <g fill="#fff">
+                                  <path d="M527 396.7 l-20.5 2.6 2.2 20.5 -14.8-14.4 -14.7 14.5 2-20.5 -20.5-2.4 17.3-11.2 -10.9-17.5 19.6 6.5 6.9-19.5 7.1 19.4 19.5-6.7 -10.7 17.6 17.4 11.1Z"/>
+                                  <path d="M523.3 279.5 l2.7-13 -9.8-9 13.2-1.5 5.5-12.1 5.5 12.1 13.2 1.5 -9.8 9 2.7 13 -11.6-6.6 -11.6 6.6Z"/>
+                                  <path d="M419.2 219.5 l-20.3 2.2 1.8 20.3 -14.4-14.5 -14.8 14.1 2.4-20.3 -20.2-2.7 17.3-10.8 -10.5-17.5 19.3 6.8 7.2-19.1 6.7 19.3 19.4-6.3 -10.9 17.3 17.1 11.2Z"/>
+                                  <path d="M623 186.7 l-20.9 2.7 2.3 20.9 -15.1-14.7 -15 14.8 2.1-21 -20.9-2.4 17.7-11.5 -11.1-17.9 20 6.7 7-19.8 7.2 19.8 19.9-6.9 -11 18 17.8 11.3Z"/>
+                                  <path d="M526.9 103.2 l-20.7 2.3 1.9 20.8 -14.7-14.8 -15.1 14.4 2.4-20.7 -20.7-2.8 17.7-11 -10.7-17.9 19.7 6.9 7.3-19.5 6.8 19.7 19.8-6.5 -11.1 17.6 17.4 11.5Z"/>
+                                  <path d="M234 385.7 l-45.8 5.4 4.6 45.9 -32.8-32.4 -33 32.2 4.9-45.9 -45.8-5.8 38.9-24.8 -24-39.4 43.6 15 15.8-43.4 15.5 43.5 43.7-14.7 -24.3 39.2 38.8 25.1Z"/>
+                                </g>
+                              </svg>   Australia</li>
+                            <li><input type="checkbox" ><svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-us" viewBox="0 0 640 480">
+                                <g fill-rule="evenodd">
+                                  <g stroke-width="1pt">
+                                    <path fill="#bd3d44" d="M0 0h972.8v39.4H0zm0 78.8h972.8v39.4H0zm0 78.7h972.8V197H0zm0 78.8h972.8v39.4H0zm0 78.8h972.8v39.4H0zm0 78.7h972.8v39.4H0zm0 78.8h972.8V512H0z" transform="scale(.9375)"/>
+                                    <path fill="#fff" d="M0 39.4h972.8v39.4H0zm0 78.8h972.8v39.3H0zm0 78.7h972.8v39.4H0zm0 78.8h972.8v39.4H0zm0 78.8h972.8v39.4H0zm0 78.7h972.8v39.4H0z" transform="scale(.9375)"/>
+                                  </g>
+                                  <path fill="#192f5d" d="M0 0h389.1v275.7H0z" transform="scale(.9375)"/>
+                                  <path fill="#fff" d="M32.4 11.8 36 22.7h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7H29zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7h11.4zm64.8 0 3.6 10.9H177l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7h11.5zm64.9 0 3.5 10.9H242l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.2-6.7h11.4zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.5zM64.9 39.4l3.5 10.9h11.5L70.6 57 74 67.9l-9-6.7-9.3 6.7L59 57l-9-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.3 6.7 3.6 10.9-9.3-6.7-9.3 6.7L124 57l-9.3-6.7h11.5zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 10.9-9.2-6.7-9.3 6.7 3.5-10.9-9.2-6.7H191zm64.8 0 3.6 10.9h11.4l-9.3 6.7 3.6 10.9-9.3-6.7-9.2 6.7 3.5-10.9-9.3-6.7H256zm64.9 0 3.5 10.9h11.5L330 57l3.5 10.9-9.2-6.7-9.3 6.7 3.5-10.9-9.2-6.7h11.4zM32.4 66.9 36 78h11.4l-9.2 6.7 3.5 10.9-9.3-6.8-9.2 6.8 3.5-11-9.3-6.7H29zm64.9 0 3.5 11h11.5l-9.3 6.7 3.5 10.9-9.2-6.8-9.3 6.8 3.5-11-9.2-6.7h11.4zm64.8 0 3.6 11H177l-9.2 6.7 3.5 10.9-9.3-6.8-9.2 6.8 3.5-11-9.3-6.7h11.5zm64.9 0 3.5 11H242l-9.3 6.7 3.6 10.9-9.3-6.8-9.3 6.8 3.6-11-9.3-6.7h11.4zm64.8 0 3.6 11h11.4l-9.2 6.7 3.5 10.9-9.3-6.8-9.2 6.8 3.5-11-9.2-6.7h11.4zm64.9 0 3.5 11h11.5l-9.3 6.7 3.6 10.9-9.3-6.8-9.3 6.8 3.6-11-9.3-6.7h11.5zM64.9 94.5l3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.5zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7H191zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7H256zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7h11.4zM32.4 122.1 36 133h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7H29zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 10.9-9.2-6.7-9.3 6.7 3.5-10.9-9.2-6.7h11.4zm64.8 0 3.6 10.9H177l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7h11.5zm64.9 0 3.5 10.9H242l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.2-6.7h11.4zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.5zM64.9 149.7l3.5 10.9h11.5l-9.3 6.7 3.5 10.9-9.2-6.8-9.3 6.8 3.5-11-9.2-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.3 6.7 3.6 10.9-9.3-6.8-9.3 6.8 3.6-11-9.3-6.7h11.5zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 10.9-9.2-6.8-9.3 6.8 3.5-11-9.2-6.7H191zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 10.9-9.3-6.8-9.2 6.8 3.5-11-9.3-6.7H256zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 10.9-9.2-6.8-9.3 6.8 3.5-11-9.2-6.7h11.4zM32.4 177.2l3.6 11h11.4l-9.2 6.7 3.5 10.8-9.3-6.7-9.2 6.7 3.5-10.9-9.3-6.7H29zm64.9 0 3.5 11h11.5l-9.3 6.7 3.6 10.8-9.3-6.7-9.3 6.7 3.6-10.9-9.3-6.7h11.4zm64.8 0 3.6 11H177l-9.2 6.7 3.5 10.8-9.3-6.7-9.2 6.7 3.5-10.9-9.3-6.7h11.5zm64.9 0 3.5 11H242l-9.3 6.7 3.6 10.8-9.3-6.7-9.3 6.7 3.6-10.9-9.3-6.7h11.4zm64.8 0 3.6 11h11.4l-9.2 6.7 3.5 10.8-9.3-6.7-9.2 6.7 3.5-10.9-9.2-6.7h11.4zm64.9 0 3.5 11h11.5l-9.3 6.7 3.6 10.8-9.3-6.7-9.3 6.7 3.6-10.9-9.3-6.7h11.5zM64.9 204.8l3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.5zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7H191zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7H256zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7h11.4zM32.4 232.4l3.6 10.9h11.4l-9.2 6.7 3.5 10.9-9.3-6.7-9.2 6.7 3.5-11-9.3-6.7H29zm64.9 0 3.5 10.9h11.5L103 250l3.6 10.9-9.3-6.7-9.3 6.7 3.6-11-9.3-6.7h11.4zm64.8 0 3.6 10.9H177l-9 6.7 3.5 10.9-9.3-6.7-9.2 6.7 3.5-11-9.3-6.7h11.5zm64.9 0 3.5 10.9H242l-9.3 6.7 3.6 10.9-9.3-6.7-9.3 6.7 3.6-11-9.3-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 10.9-9.3-6.7-9.2 6.7 3.5-11-9.2-6.7h11.4zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.6 10.9-9.3-6.7-9.3 6.7 3.6-11-9.3-6.7h11.5z" transform="scale(.9375)"/>
+                                </g>
+                              </svg>   United States</li>
+                            <li><input type="checkbox" ><svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ca" viewBox="0 0 640 480">
+                                <path fill="#fff" d="M81.1 0h362.3v512H81.1z" transform="translate(74.1) scale(.9375)"/>
+                                <path fill="#d52b1e" d="M-100 0H81.1v512H-100zm543.4 0h181.1v512h-181zm-308 247.4-14.2 4.8 65.5 57.5c5 14.7-1.7 19-6 26.8l71-9L250 399l14.8-.4-3.3-71 71.2 8.5c-4.4-9.3-8.3-14.2-4.3-29l65.4-54.5-11.4-4.2c-9.4-7.2 4-34.7 6-52.1 0 0-38.1 13.1-40.6 6.2l-9.8-18.7-34.7 38.2c-3.8.9-5.4-.6-6.3-3.8l16-79.8-25.4 14.3c-2.1 1-4.2.2-5.6-2.3l-24.5-49-25.2 50.9c-1.9 1.8-3.8 2-5.4.8l-24.2-13.6 14.6 79.1c-1.2 3.2-4 4-7.2 2.3l-33.3-37.7c-4.3 7-7.2 18.3-13 20.9-5.7 2.4-25-4.8-37.9-7.6 4.4 15.9 18.2 42.3 9.5 51z" transform="translate(74.1) scale(.9375)"/>
+                              </svg>   Canada</li>
+                            <li><input type="checkbox" ><svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb" viewBox="0 0 640 480">
+                                <path fill="#012169" d="M0 0h640v480H0z"/>
+                                <path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z"/>
+                                <path fill="#C8102E" d="m424 281 216 159v40L369 281h55zm-184 20 6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z"/>
+                                <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z"/>
+                                <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z"/>
+                              </svg>   England</li>
+                            <li><input type="checkbox" ><svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ae" viewBox="0 0 640 480">
+                                <path fill="#00732f" d="M0 0h640v160H0z"/>
+                                <path fill="#fff" d="M0 160h640v160H0z"/>
+                                <path d="M0 320h640v160H0z"/>
+                                <path fill="red" d="M0 0h220v480H0z"/>
+                              </svg>   United Emirates</li>
+                            <li><input type="checkbox" ><svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-pk" viewBox="0 0 640 480">
+                                <defs>
+                                  <clipPath id="pk-a">
+                                    <path fill-opacity=".7" d="M-52.3 0h682.6v512H-52.3z"/>
+                                  </clipPath>
+                                </defs>
+                                <g fill-rule="evenodd" stroke-width="1pt" clip-path="url(#pk-a)" transform="translate(49) scale(.9375)">
+                                  <path fill="#0c590b" d="M-95 0h768v512H-95z"/>
+                                  <path fill="#fff" d="M-95 0H97.5v512H-95z"/>
+                                  <g fill="#fff">
+                                    <path d="m403.7 225.4-31.2-6.6-16.4 27.3-3.4-31.6-31-7.2 29-13-2.7-31.7 21.4 23.6 29.3-12.4-15.9 27.6 21 24z"/>
+                                    <path d="M415.4 306a121.2 121.2 0 0 1-161.3 59.4 122.1 122.1 0 0 1-59.5-162.1A118.6 118.6 0 0 1 266 139a156.2 156.2 0 0 0-11.8 10.9A112.3 112.3 0 0 0 415.5 306z"/>
+                                  </g>
+                                </g>
+                              </svg>   Pakistan</li>
+                            <li><input type="checkbox" ><svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ua" viewBox="0 0 640 480">
+                                <g fill-rule="evenodd" stroke-width="1pt">
+                                  <path fill="#ffd700" d="M0 0h640v480H0z"/>
+                                  <path fill="#0057b8" d="M0 0h640v240H0z"/>
+                                </g>
+                              </svg>   Ukraine</li>
+                        </ul>
+                    </div>
+
+                    <div class="hourly-lst">
+                        <h4>Hourly Rate</h4>
+                        <ul class="list-scroll">
+                            <li><input type="checkbox" >   $10 And Below</li>
+                            <li><input type="checkbox" >   $10 - $30</li>
+                            <li><input type="checkbox" >   $30 - $60</li>
+                            <li><input type="checkbox" >   $60 - $90</li>
+                            <li><input type="checkbox" >   $90 - $150</li>
+                            <li><input type="checkbox" >   $150 - $200</li>
+                            <li><input type="checkbox" >   $200 And Above</li>
+                        </ul>
+                    </div>
+
+                    <div class="work-lst">
+                        <h4>Freelancer Type</h4>
+                        <ul class="list-scroll">
+                            <li><input type="checkbox" >   Pro Independent Freelancers</li>
+                            <li><input type="checkbox" >   Pro Agency Freelancers</li>
+                            <li><input type="checkbox" >   Independent Freelancers</li>
+                            <li><input type="checkbox" >   New Rising Talent</li>
+                        </ul>
+                    </div>
+
+                    <div class="englsh-lst">
+                        <h4>Engliah Level</h4>
+                        <ul class="list-scroll">
+                            <li><input type="checkbox" >   Basic</li>
+                            <li><input type="checkbox" >   Conversational</li>
+                            <li><input type="checkbox" >   Fluent</li>
+                            <li><input type="checkbox" >   Native Or Bilingual</li>
+                            <li><input type="checkbox" >   Professional</li>
+                        </ul>
+                    </div>
+
+                    <div class="lange-lst">
+                        <h4>Freelancer Type</h4>
+                        <ul class="list-scroll">
+                            <li><input type="checkbox" >   Chinese</li>
+                            <li><input type="checkbox" >   Spanish</li>
+                            <li><input type="checkbox" >   English</li>
+                            <li><input type="checkbox" >   Arabic</li>
+                            <li><input type="checkbox" >   Russian</li>
+                            <li><input type="checkbox" >   Urdu</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="right-terms">
+
+                    <div class="dvlprs-lst">
+
+                        <% for(let x = 0; x < signup.length; x++){%>
+                            <div class="dvlpr-card">
+                
+                                <div class="dvlpr-up">
+                                    <div class="user-pic">
+                                        <img src="<%= signup[x].image%>" alt="">
+                                    </div>
+                                    <div class="user-txt">
+                                        <div class="user-name">
+                                            <h4><i class="fa fa-badge-check"></i> <%- signup[x].fname+' '+signup[x].lname %></h4>
+                                        </div>
+                                        <div class="user-work">
+                                            <h3><%- signup[x].work %></h3>
+                                        </div>
+                                        <div class="user-relate">
+                                            <div class="hour-pric">
+                                                <p><i class="fa fa-money-bill-1"></i> <%- signup[x].payment %> </p>
+                                            </div>
+                                            <span>|</span>
+                                            <div class="user-locat">
+                                                 <p>
+                                                   <!-- <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-us" viewBox="0 0 640 480">
+                                                    <g fill-rule="evenodd">
+                                                      <g stroke-width="1pt">
+                                                        <path fill="#bd3d44" d="M0 0h972.8v39.4H0zm0 78.8h972.8v39.4H0zm0 78.7h972.8V197H0zm0 78.8h972.8v39.4H0zm0 78.8h972.8v39.4H0zm0 78.7h972.8v39.4H0zm0 78.8h972.8V512H0z" transform="scale(.9375)"/>
+                                                        <path fill="#fff" d="M0 39.4h972.8v39.4H0zm0 78.8h972.8v39.3H0zm0 78.7h972.8v39.4H0zm0 78.8h972.8v39.4H0zm0 78.8h972.8v39.4H0zm0 78.7h972.8v39.4H0z" transform="scale(.9375)"/>
+                                                      </g>
+                                                      <path fill="#192f5d" d="M0 0h389.1v275.7H0z" transform="scale(.9375)"/>
+                                                      <path fill="#fff" d="M32.4 11.8 36 22.7h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7H29zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7h11.4zm64.8 0 3.6 10.9H177l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7h11.5zm64.9 0 3.5 10.9H242l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.2-6.7h11.4zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.5zM64.9 39.4l3.5 10.9h11.5L70.6 57 74 67.9l-9-6.7-9.3 6.7L59 57l-9-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.3 6.7 3.6 10.9-9.3-6.7-9.3 6.7L124 57l-9.3-6.7h11.5zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 10.9-9.2-6.7-9.3 6.7 3.5-10.9-9.2-6.7H191zm64.8 0 3.6 10.9h11.4l-9.3 6.7 3.6 10.9-9.3-6.7-9.2 6.7 3.5-10.9-9.3-6.7H256zm64.9 0 3.5 10.9h11.5L330 57l3.5 10.9-9.2-6.7-9.3 6.7 3.5-10.9-9.2-6.7h11.4zM32.4 66.9 36 78h11.4l-9.2 6.7 3.5 10.9-9.3-6.8-9.2 6.8 3.5-11-9.3-6.7H29zm64.9 0 3.5 11h11.5l-9.3 6.7 3.5 10.9-9.2-6.8-9.3 6.8 3.5-11-9.2-6.7h11.4zm64.8 0 3.6 11H177l-9.2 6.7 3.5 10.9-9.3-6.8-9.2 6.8 3.5-11-9.3-6.7h11.5zm64.9 0 3.5 11H242l-9.3 6.7 3.6 10.9-9.3-6.8-9.3 6.8 3.6-11-9.3-6.7h11.4zm64.8 0 3.6 11h11.4l-9.2 6.7 3.5 10.9-9.3-6.8-9.2 6.8 3.5-11-9.2-6.7h11.4zm64.9 0 3.5 11h11.5l-9.3 6.7 3.6 10.9-9.3-6.8-9.3 6.8 3.6-11-9.3-6.7h11.5zM64.9 94.5l3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.5zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7H191zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7H256zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7h11.4zM32.4 122.1 36 133h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7H29zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 10.9-9.2-6.7-9.3 6.7 3.5-10.9-9.2-6.7h11.4zm64.8 0 3.6 10.9H177l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7h11.5zm64.9 0 3.5 10.9H242l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.2-6.7h11.4zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.5zM64.9 149.7l3.5 10.9h11.5l-9.3 6.7 3.5 10.9-9.2-6.8-9.3 6.8 3.5-11-9.2-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.3 6.7 3.6 10.9-9.3-6.8-9.3 6.8 3.6-11-9.3-6.7h11.5zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 10.9-9.2-6.8-9.3 6.8 3.5-11-9.2-6.7H191zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 10.9-9.3-6.8-9.2 6.8 3.5-11-9.3-6.7H256zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 10.9-9.2-6.8-9.3 6.8 3.5-11-9.2-6.7h11.4zM32.4 177.2l3.6 11h11.4l-9.2 6.7 3.5 10.8-9.3-6.7-9.2 6.7 3.5-10.9-9.3-6.7H29zm64.9 0 3.5 11h11.5l-9.3 6.7 3.6 10.8-9.3-6.7-9.3 6.7 3.6-10.9-9.3-6.7h11.4zm64.8 0 3.6 11H177l-9.2 6.7 3.5 10.8-9.3-6.7-9.2 6.7 3.5-10.9-9.3-6.7h11.5zm64.9 0 3.5 11H242l-9.3 6.7 3.6 10.8-9.3-6.7-9.3 6.7 3.6-10.9-9.3-6.7h11.4zm64.8 0 3.6 11h11.4l-9.2 6.7 3.5 10.8-9.3-6.7-9.2 6.7 3.5-10.9-9.2-6.7h11.4zm64.9 0 3.5 11h11.5l-9.3 6.7 3.6 10.8-9.3-6.7-9.3 6.7 3.6-10.9-9.3-6.7h11.5zM64.9 204.8l3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.3 6.7 3.6 11-9.3-6.8-9.3 6.7 3.6-10.9-9.3-6.7h11.5zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7H191zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 11-9.3-6.8-9.2 6.7 3.5-10.9-9.3-6.7H256zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.5 11-9.2-6.8-9.3 6.7 3.5-10.9-9.2-6.7h11.4zM32.4 232.4l3.6 10.9h11.4l-9.2 6.7 3.5 10.9-9.3-6.7-9.2 6.7 3.5-11-9.3-6.7H29zm64.9 0 3.5 10.9h11.5L103 250l3.6 10.9-9.3-6.7-9.3 6.7 3.6-11-9.3-6.7h11.4zm64.8 0 3.6 10.9H177l-9 6.7 3.5 10.9-9.3-6.7-9.2 6.7 3.5-11-9.3-6.7h11.5zm64.9 0 3.5 10.9H242l-9.3 6.7 3.6 10.9-9.3-6.7-9.3 6.7 3.6-11-9.3-6.7h11.4zm64.8 0 3.6 10.9h11.4l-9.2 6.7 3.5 10.9-9.3-6.7-9.2 6.7 3.5-11-9.2-6.7h11.4zm64.9 0 3.5 10.9h11.5l-9.3 6.7 3.6 10.9-9.3-6.7-9.3 6.7 3.6-11-9.3-6.7h11.5z" transform="scale(.9375)"/>
+                                                    </g>
+                                                  </svg> -->
+                                                  <i class="fa-solid fa-location-dot"></i>
+                                                   <%- signup[x].locat %></p> 
+                                            </div>
+                                            <span>|</span>
+                                            <div class="user-save">
+                                                <p><i class="fa-regular fa-heart"></i> Save</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="user-rate">
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <h4>4.5</h4>
+                                    </div> -->
+                                </div>
+                
+                                <!-- <div class="dvlpr-cnter">
+                                    <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliquaenim ad minim veniamac quis nostrud exercitation ullamco laboris...</p>
+                                </div> -->
+                
+                                <div class="card-down">
+                            
+                                <div class="tags-pop">
+                                    <h6>PHP</h6>
+                                    <h6>HTML</h6>
+                                    <h6>Javascript</h6>
+                                    <h6 href="./profile.html">WordPress</h6>
+                                </div>
+                
+                                <a class="view-user" href="/profile/<%- signup[x].id %>">
+                                    <div class="profile">
+                                        <p>View Profile</p>
+                                        <i class="fa-solid fa-arrow-right-long" id="arrow"></i>
+                                    </div>
+                                </a>
+                                </div>
+                
+                                </div>
+                        <% } %>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="foot-box">
+                <div class="in-foot-box">
+                    <h3>By Skills</h3>
+                    <ul>
+                        <li>Software Engineer</li>
+                        <li>Technical Writer</li>
+                        <li>UI Designer</li>
+                        <li>UX Designer</li>
+                        <li>Virtual Assistant</li>
+                        <li>Web Designer</li>
+                        <li>Wordpress Developer</li>
+                        <li>Content Writer</li>
+                    </ul>
+                </div>
+                <div class="in-foot-box">
+                    <h3>Skills in US</h3>
+                    <ul>
+                        <li>HTML Develpoer in US</li>
+                        <li>CSS Developer in US</li>
+                        <li>Javascript Developer in US</li>
+                        <li>Miscrosoft Word Experts in US</li>
+                        <li>PowerPoint Experts in US</li>
+                        <li>Social Media Marketers in US</li>
+                        <li>Wordpress Developers in US</li>
+                        <li>Writers in US</li>
+                    </ul>
+                </div>
+                <div class="in-foot-box">
+                    <h3>By Categories</h3>
+                    <ul>
+                        <li>Graphics & Design</li>
+                        <li>Digital Marketing</li>
+                        <li>Writing & Translation</li>
+                        <li>Video & Animation</li>
+                        <li>Music & Audio</li>
+                        <li>Programming & Tech</li>
+                        <li>Business</li>
+                        <li>Fun & Lifestyle</li>
+                    </ul>
+                </div>
+                <div class="in-foot-box">
+                    <h3>By Location</h3>
+                    <ul>
+                        <li>Switzerland</li>
+                        <li>Canada</li>
+                        <li>Germany</li>
+                        <li>United Kingdom</li>
+                        <li>Japan</li>
+                        <li>Sweden</li>
+                        <li>Australia</li>
+                        <li>United States</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-company">
+                <div class="in-about-company">
+                    <div class="left-comp">
+                        <div class="comp-adres">
+                            <div class="logo-img">
+                                <img src="media/flogo.png" alt="">
+                                <p>company logo here
+                                    Dotem eiusmod tempor incune utnaem
+                                    labore etdolore maigna aliqua enim
+                                    poskina ilukita ylokem lokateise ination
+                                    voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur lokaim urianewce
+                                    more...</p>
+                                <div class="icons">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-youtube"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-comp">
+                        <div class="comp-links">
+                            <h5>Company</h5>
+                            <ul>
+                                <li>About Us</li>
+                                <li>How it Works</li>
+                                <li>Careers</li>
+                                <li>Terms & Conditions</li>
+                                <li>Trust & Safety</li>
+                            </ul>
+                        </div>
+                        <div class="comp-xplor">
+                            <h5>Explore More</h5>
+                            <ul>
+                                <li>Freelancers in USA</li>
+                                <li>Freelancers in Canada</li>
+                                <li>Freelancers in Australia</li>
+                                <li>Jobs in USA</li>
+                                <li>Find jobs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot-down">
+                <div class="copy-right">
+                    <p>Copy&copy; 2022 Worktern All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+
+    <script>
+        console.log('its user_list page');
+
+        function pickId() {
+            let list = document.querySelector('.dvlprs-lst'),
+            box = [];
+            let item = document.querySelectorAll('.dvlpr-card');
+            
+            box.push(item);
+            box.forEach(item => {
+                console.log(box)
+            });
+            
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #ff5851;
+}
+.join {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.join button {
+    width: 250px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.join button a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.join button:hover{
+    transition: all .3s;
+    background: #fff;
+    border: 2px solid #fff;
+}
+.join button:hover a{
+    color: #ff5851;
+}
+
+.join-container {
+    width: 100%;
+    height: 100vh;
+}
+.join-container .in-join-cont {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.in-join-cont img {
+    width: 400px;
+}
+.in-join-cont .usr-info {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    top: 25px;
+    bottom: 25px;
+}
+.usr-info form {
+    position: absolute;
+    width: 600px;
+    /* height: 500px; */
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.usr-info form h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.usr-info form p{
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.usr-info form input, select {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 0px 25px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid red;
+    /* border-radius: 8px; */
+    font-size: 16px;
+    position: relative;
+}
+.usr-info form select{
+    width: 100%;
+}
+.usr-info form .show {
+    position: absolute;
+    margin-top: -42px;
+    right: 30px;
+    top: 245px;
+}
+.usr-info form .names{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.usr-info form .names input, select{
+    width: 49%;
+    height: 40px;
+    padding: 0px 20px;
+    outline: none;
+}
+.usr-info form .fame{
+    display: block;
+}
+.usr-info form .fame select{
+    width: 100%;
+    height: 40px;
+}
+input[type="submit"] {
+    /* border: none; */
+    background: #ff5851;
+    border-bottom: 1px solid #ff5851;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}

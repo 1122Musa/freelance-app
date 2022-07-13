@@ -1,0 +1,70 @@
+.text {
+    width: 40%;
+}
+.container-box .in-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+.in-container .left-effect {
+    width: 27%;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+}
+.left-effect .effect-txt{
+    width: 100%;
+}
+.left-effect .effect-txt h3{
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+.left-effect .rule-txt{
+    width: 100%;
+    margin: 20px 0px;
+}
+.rule-txt ul{
+    padding-left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.rule-txt ul li{
+    list-style: none;
+    width: 100%;
+    height: 30px;
+}
+.rule-txt ul li a{
+    text-decoration: none;
+    color: #999;
+    font-size: 15px;
+}
+.rule-txt ul li a:hover{
+    color: #ff5851;
+}
+.in-container .right-terms {
+    width: 65%;
+    height: 100%;
+    float: right;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+}
+.right-terms .term-txt{
+    width: 100%;
+    margin: 10px 0px;
+}
+.term-txt h2{
+    font-weight: 900;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+.term-txt p{
+    color: #999;
+}
+.term-txt p i{
+    color: #ff5851;
+}

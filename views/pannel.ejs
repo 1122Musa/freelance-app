@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="pannel.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Pannel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+      <style>
+        body{
+          background-color: black;
+        }
+        h1{
+          color: #fff;
+        }
+      </style>
+</head>
+<body>
+
+    
+    
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-center" href="#"><img src="media/flogo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">             
+            </ul>
+            <form class="d-flex"  method="post" action="/pannel" novalidate>
+              <input class="form-control me-2" type="search" placeholder="Search" name="search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+     <h1 class="m-2">Dashboard Pannel</h1>
+
+     <button class="btn btn-primary m-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+     <div class="contianer m-3 d-flex">
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="/admin/logout">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+     <table class="table table-dark table-striped">
+
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>experience</th>
+            <th>Phone</th>
+            <th>Work</th>
+            <th>Location</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <% if(signup.length > 0){ %>
+            <% for(i = 0; i < signup.length; i++){ %>
+               <tr>
+                   <td><%- signup[i].id %></td>
+                   <td><%- signup[i].fname %></td>
+                   <td><%- signup[i].lname %></td>
+                   <td><%- signup[i].email %></td>
+                   <td><%- signup[i].experience %></td>
+                   <td><%- signup[i].phone %></td>
+                   <td><%- signup[i].work %></td>
+                   <td><%- signup[i].locat %></td>
+                   <td><button type="button" class="btn btn-warning">Edit</button></td>
+                   <td><button type="button" class="btn btn-danger">Delete</button></td>
+               </tr>
+            <% } %>
+        <% }else{ %>
+            <p>User are not found</p>
+        <% } %> 
+
+
+     </table>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test JS</title>
+    </head>
+    <body>
+
+        <div class="list">
+            <ul>
+                <li><input type="checkbox" name="" id="input" value="HTML">HTML</li>
+                <li><input type="checkbox" name="" id="input" value="CSS">CSS</li>
+                <li><input type="checkbox" name="" id="input" value="JS">JAVASCRIPT</li>
+                <li><input type="checkbox" name="" id="input" value="NODE JS">NODE JS</li>
+                <li><input type="checkbox" name="" id="input" value="JQUERY">JQUERY</li>
+                <li><input type="button" id="btnClick" value="Get Value"  onclick="GetSelected()"/></li>
+            </ul>
+        </div>
+            
+            
+
+        <div class="container">
+
+        </div>
+        
+          <br/>
+
+            
+
+
+        <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+            <script type="text/javascript">
+
+
+                let box = document.querySelector('.container');
+                
+
+
+                function GetSelected() {
+                let selected = new Array();
+                 
+                var input = document.querySelectorAll("#input");
+                 
+                for (var i = 0; i < input.length; i++) {
+                if (input[i].checked) {
+                selected.push(input[i].value);
+                }
+                }
+                console.log(selected);
+ 
+                selected.forEach(function(elem, i){
+                let item = document.createElement("li"); 
+                item.innerHTML = selected[i];
+                box.append(item);
+                })
+                }
+                
+                 
+                // $(function () {
+            
+                //     $("#btnClick").click(function () {
+            
+                //         var selected = new Array();
+            
+                //         $("#tblFruits input[type=checkbox]:checked").each(function () {
+            
+                //             selected.push(this.value);
+            
+                //         });
+            
+                //         if (selected.length > 0) {
+            
+                //             selected.forEach(element => {
+                //               item.innerHTML = element;
+                //               box.appendChild(item);  
+                //             });
+                //         }
+            
+                //     });
+            
+                // });
+            
+            </script>
+    </body>
+</html>

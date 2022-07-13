@@ -1,0 +1,97 @@
+.chat-con {
+    width: 100%;
+    height: 85vh;
+}
+.chat-in {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.contacts {
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid silver;
+}
+.list-head {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff5851;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+}
+.contacts ul {
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+    list-style: none;
+}
+.contacts ul li {
+    width: 100%;
+    height: 80px;
+    background: #e9e4e4ad;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+}
+.contacts ul li:hover{
+    background-color: #edcdcc;
+    transition:  all.3s;
+}
+.chat-form {
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.user-head {
+    width: 100%;
+    height: 70px;
+    background: #e9e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+.user-head img{
+    height: 100%;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+.user-head h4{
+    font-size: 20px;
+}
+.msg-box {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+.msg-box form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.msg-box form input[type="text"] {
+    width: 94%;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid silver;
+    padding: 10px;
+}
+.msg-box form input[type="submit"] {
+    width: 4.5%;
+    border-radius: 40%;
+    outline: none;
+    border: none;
+    background: #ff5851;
+    color: #fff;
+    padding: 2px;
+}
