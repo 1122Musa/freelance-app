@@ -10,12 +10,20 @@ const app = express();
 const port = process.env.PORT;
 const ejs = require('ejs');
 const cookieParser = require('cookie-parser');
+const session = require('express-session');
 // const path = require('path');
 
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.set('views', path.join(__dirname + '/views'));
 app.use(bodyParser.urlencoded({ extended: false }));
+const oneDay = 1000 * 60 * 60 * 24;
+app.use(session({
+    secret: 'secret-key',
+    resave: false,
+    saveUninitialized: true,
+    cookie: {maxAge: oneDay}
+}));
 app.use(routes);
 app.set('view engine', 'ejs');
 // app.use(express.static(__dirname + '/public/css'));

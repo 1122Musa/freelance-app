@@ -56,7 +56,7 @@
         <header>
             <nav>
                 <div class="logo">
-                    <a href="/home">
+                    <a href="/">
                       <img src="logo.png" alt="">
                     </a>
                 </div>
@@ -121,9 +121,23 @@
                     <div class="in-sepr-line"></div>
                 </div>
 
-                <div class="btns">
-                    <a href="/login">LOGIN</a>
-                    <a href="/join">JOIN NOW</a>
+                <!-- <div class="notify">
+                    <a href="/profile"><i class="fa-regular fa-bell"></i></a>
+                    <a href="/chat"><i class="fa-regular fa-message"></i></a>
+                </div>
+
+                <div class="sepr-line">
+                    <div class="in-sepr-line"></div>
+                </div> -->
+
+                <div class="profile">
+                    <a href="/myProfile"><img src="<%= user.image%>" alt=""></a>
+                    <a href="/myProfile">
+                        <h5><%=user.fname%></h5>
+                    </a>
+                </div>
+                <div class="logout">
+                    <a href="/logout" onclick="preventBack()">Logout</a>
                 </div>
 
                 
@@ -196,6 +210,8 @@
                 </div>
             </div>
         </div>
+
+        <p><%= alert%></p>
 
         <div class="how-banner">
             <div class="in-banner">
@@ -661,7 +677,13 @@
             let close = document.querySelector('.close');
             let submit = document.querySelector('#submit')
             addWork.addEventListener('click', ()=>{
+                if("<%=alert%>" == 'freelancer' ){
+                    return(
+                        alert(`You are a Freelancer! You can't upload Project`)
+                    )
+                }
                 popUp.style.display = 'block';
+
             });
             submit.addEventListener('click', ()=>{
                 popUp.style.display = 'none';

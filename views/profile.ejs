@@ -35,65 +35,64 @@
         <header>
             <nav>
                 <div class="logo">
-                    <div class="txt">
-                        <h1><a href="/"><img src="../logo.png"
-                                    alt=""></a></h1>
-                    </div>
+                    <a href="/">
+                      <img src="logo.png" alt="">
+                    </a>
                 </div>
 
                 <div class="links">
                     <ul>
                         <li id="main"><a href="#">Home</a>
-                            <div class="under-line">
-                                <div class="in-under-line"></div>
-                            </div>
+                            <!-- <div class="under-line">
+                              <div class="in-under-line"></div>
+                            </div> -->
 
                             <div class="link-down" id="link-down">
                                 <ul>
                                     <!-- <li><a href="index.html">Home</a></li> -->
-                                    <li><a href="articles.html">Article</a></li>
+                                    <li><a href="articles.html">Blogs</a></li>
                                     <!-- <li><a href="">Company</a></li> -->
                                     <li><a href="About.html">About</a></li>
                                     <li><a href="privacy.html">Privacy Policy</a></li>
-                                    <!-- <li><a href="">Coming Soon</a></li> -->
+                                    <!-- <li><a href="profile.html">Profile</a></li> -->
                                     <!-- <li><a href="">404 Page</a></li> -->
                                 </ul>
                             </div>
                         </li>
-
+                        
                         <!-- <span>&#8226;</span> -->
-                        <li><a href="how_it_works.html">How It Works</a>
-                            <div class="under-line">
+                        <li><a href="/about">How It Works</a>
+                            <!-- <div class="under-line">
                                 <div class="in-under-line"></div>
-                            </div>
+                            </div> -->
                         </li>
                         <!-- <span>&#8226;</span> -->
-                        <li id="browse"><a href="Browse-jobs.html">Browse Jobs</a>
-                            <div class="under-line">
+                        <li id="browse"><a href="/projects">Projects</a>
+                            <!-- <div class="under-line">
                                 <div class="in-under-line"></div>
-                            </div>
+                            </div> -->
                         </li>
 
                         <!-- <div class="link-down-2" id="link-down-2">
-                        <ul>
-                            <li><a href="">Job Listing</a></li>
-                            <li><a href="">Job Single</a></li>
-                            <li><a href="">Job Porposal</a></li>
-                        </ul>
-                    </div> -->
+                            <ul>
+                                <li><a href="">Job Listing</a></li>
+                                <li><a href="">Job Single</a></li>
+                                <li><a href="">Job Porposal</a></li>
+                            </ul>
+                        </div> -->
                         <!-- <span>&#8226;</span> -->
-                        <li id="view"><a href="user_list.html">View Freelancers</a>
-                            <div class="under-line">
+                        <li id="view"><a href="/freelancer">Freelancers</a>
+                            <!-- <div class="under-line">
                                 <div class="in-under-line"></div>
-                            </div>
+                            </div> -->
                         </li>
 
                         <!-- <div class="link-down-3" id="link-down-3">
-                        <ul>
-                            <li><a href="">User Listing</a></li>
-                            <li><a href="">User Single</a></li>
-                        </ul>
-                    </div> -->
+                            <ul>
+                                <li><a href="">User Listing</a></li>
+                                <li><a href="">User Single</a></li>
+                            </ul>
+                        </div> -->
                     </ul>
                 </div>
 
@@ -101,12 +100,26 @@
                     <div class="in-sepr-line"></div>
                 </div>
 
-                <div class="btns">
-                    <a href="log-in.html">LOGIN</a>
-                    <a href="join.html">JOIN NOW</a>
+                <!-- <div class="notify">
+                    <a href="/profile"><i class="fa-regular fa-bell"></i></a>
+                    <a href="/chat"><i class="fa-regular fa-message"></i></a>
                 </div>
 
+                <div class="sepr-line">
+                    <div class="in-sepr-line"></div>
+                </div> -->
 
+                <div class="profile">
+                    <a href="/myProfile"><img src="<%= user.image%>" alt=""></a>
+                    <a href="/myProfile">
+                        <h5><%=user.fname%></h5>
+                    </a>
+                </div>
+                <div class="logout">
+                    <a href="/logout" onclick="preventBack()">Logout</a>
+                </div>
+
+                
             </nav>
         </header>
 
